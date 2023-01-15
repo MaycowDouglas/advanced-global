@@ -15,7 +15,7 @@ export function capitalize(sentence: string, selectedWords: number[] = []): stri
   const words = sentence.split(' ')
 
   const capitalized = words.map((word) => {
-    if(selectedWords.length > 0) {
+    if (selectedWords.length > 0) {
       if (selectedWords.includes(words.indexOf(word))) {
         const firstLetter = word[0].toUpperCase()
         const otherLetters = word.substring(1).toLocaleLowerCase()
@@ -30,6 +30,6 @@ export function capitalize(sentence: string, selectedWords: number[] = []): stri
 
     return firstLetter + otherLetters
   })
-  
+
   return capitalized.toString().replaceAll(',', ' ')
 }
