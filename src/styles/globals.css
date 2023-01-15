@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: 'sans-serif';
+
+  --nprogress-bar-color: theme(colors.blue.700);
+  --nprogress-spin-color: theme(colors.blue.700);
+
+  --scroll-width: 5px;
+  --scroll-color: theme(colors.blue.700);
+}
+
+@import './fonts.css';
+@import './nprogress.css';
+
+::-webkit-scrollbar { width: var(--scroll-size); }
+::-webkit-scrollbar-thumb { border-radius: 10px; background: var(--scroll-color); }
+
